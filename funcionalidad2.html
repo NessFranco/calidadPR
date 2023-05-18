@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carrusel</title>
+
+  <style> 
+
+    h1 {
+      text-align: center;
+    }
+
+    .carrusel {
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+    }
+
+  .carrusel ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    max-width: 1030px;
+    scroll-behavior: smooth;
+  }
+
+  .carrusel-fotos {
+    display: flex;
+    gap: 10px;
+    overflow: auto;
+  }
+
+  .carrusel-fotos img {
+    background: black;
+    border: 4px solid black;
+    width: 300px;
+    height: 200px;
+    object-fit: contain;
+  }
+
+  .carrusel-fotos p {
+    text-align: justify;
+    padding: 5px;
+    border: 4px solid black;
+  }
+
+  .carrusel-fotos {
+    overflow: hidden;
+  }
+
+  .carrusel-fotos img {
+    width: 500px;
+    height: 400px;
+  }
+
+  .carrusel-menu {
+    display: block;
+  }
+
+  .carrusel-menu img {
+    box-sizing: border-box;
+    width: 50px;
+    height: 40px;
+    border: 10px solid black;
+  }
+
+  .carrusel-menu img:hover {
+    border: none;
+  }
+}
+  </style>
+</head>
+
+<body>
+
+  <h1>Carrusel de Noticias</h1>
+
+  <div class="carrusel">
+    <ul class="carrusel-fotos", title="Noticias">
+      <li id = "foto1"> <img src="Imagenes_noticias/cancion_ai.jpg">
+        <p>Se hace viral cancion de Drake y The Weekend que es completamente creada con Inteligencia Artificial.</p>
+      </li>
+
+      <li id = "foto2"> <img src="Imagenes_noticias/cohete.jpg"> 
+        <p>El cohete Ariane 5 de la misión Juice va camino a Júpiter.</p>
+      </li>
+
+      <li id = "foto3"> <img src="Imagenes_noticias/gpt5.jpg">
+        <p>OpenAI no desarrollará GPT-5 “por algún tiempo”,  ya que la empresa está ampliando el potencial de GPT-4 conectándolo a internet.</p>
+      </li>
+
+      <li id = "foto4"> <img src="Imagenes_noticias/maang.jpg">
+        <p>Los empleados de las grandes tecnológicas están en la cuerda floja: Google, Meta, IBM o Dropbox se inclinan por la inteligencia artificial.</p>
+      </li>
+
+      <li id = "foto5"> <img src="Imagenes_noticias/pangenoma.jpg">
+        <p>La comunidad científica acaba de presentar un mapa actualizado de todo el ADN humano, algo que podría ayudar a transformar las investigaciones médicas.</p>
+      </li>
+
+      <li id = "foto6"> <img src="Imagenes_noticias/netflix.jpg">
+        <p>Netflix nació el 29 de agosto de 1997 como un servicio de alquiler y venta de DVD pero El próximo 29 de septiembre será el día en el que se hará el último envío de discos.</p>
+      </li>
+
+
+      <li id = "foto7"> <img src="Imagenes_noticias/google.jpg">
+        <p>Google abre su herramienta de inteligencia artificial,continuando así en su competencia con Microsoft, empresa que la semana pasada abrió a todo el mundo su herramienta gratuita de inteligencia artificia.</p>
+      </li>
+    </ul>
+
+    <ul class="carrusel-menu", title="Menu">
+      <li> <a href = "#foto1"> <img src="Imagenes_noticias/cancion_ai.jpg"> </a></li>
+      <li> <a href = "#foto2"> <img src="Imagenes_noticias/cohete.jpg"> </a> </li>
+      <li> <a href = "#foto3"> <img src="Imagenes_noticias/gpt5.jpg"> </a> </li>
+      <li> <a href = "#foto4"> <img src="Imagenes_noticias/maang.jpg"> </a> </li>
+      <li> <a href = "#foto5"> <img src="Imagenes_noticias/pangenoma.jpg"> </a> </li>
+      <li> <a href = "#foto6"> <img src="Imagenes_noticias/netflix.jpg"> </a> </li>
+      <li> <a href = "#foto7"> <img src="Imagenes_noticias/google.jpg"> </a> </li>
+    </ul>
+  </div>
+
+</body>
+</html>
